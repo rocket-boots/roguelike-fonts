@@ -7,8 +7,33 @@
 ## How to use
 
 * Install with npm: `npm install --save github:rocket-boots/roguelike-fonts`
-* Download the files
+* ...Or just download the files
+* Put the files into a directory your css can access
+* Add [`@font-face` rules](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 
-## Examples in use
+### Example CSS
+
+```css
+@font-face {
+	font-family: "AppleII";
+	src: url("fonts/AppleII.ttf");
+}
+
+@font-face {
+	font-family: "Fix15MonoBold";
+	src: url("fonts/Fix15Mono-Bold.woff");
+}
+
+@font-face {
+	font-family: "White Rabbit";
+	src: url("fonts/whitrabt.ttf");
+}
+
+body {
+	font-family: 'AppleII', monospace;
+}
+```
+
+### Examples in use
 
 * https://deathraygames.github.io/runestar-origins/
